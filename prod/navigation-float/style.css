@@ -1,0 +1,53 @@
+body {
+    font-family: "roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #8da632;
+}
+
+.navbar {
+    background-color: #333;
+    height: 32px;
+    padding: 16px 32px;
+
+}
+
+.navbar>.links>li {
+    float: left;
+    
+}
+
+.navbar>.links .link {
+   margin-left: 20px;
+   font-size: 20px;
+}
+
+.navbar>.links .action {
+    
+    
+    margin-left: 400px;
+    float: left;
+    font-size: 20px;
+  
+}
+
+}
+.navbar>.links .action .fas.fa-mobile{
+    margin-right: 5px;
+}
+.navbar>.links .social {
+    float: right;
+    font-size: 25px;
+}
+
+.navbar>.links>li:not(.brand) {
+    padding: 8px;
+}
+
+
+/*  1. distanta intre linkuri
+    2. de reglat proximitate in categorile de linkuri
+    3. font-size 
+    4. coloruile din logo color. adobe */

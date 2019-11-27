@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+.preloder {
+    height: 200px;
+    width: 200px;
+    background-color:#000;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translateY(-100px) translateX(-100px);
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 2px #000;
+}
+
+.preloder .big {
+    height: 176px;
+    width: 176px;
+    background-color:  darkcyan;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-right-color: transparent;
+    transform: translateX(7px) translateY(7px) rotate(-45deg);
+    animation: cerc1 2s 5;
+}
+
+.preloder .big .medium {
+    height: 150px;  
+    width: 150px;
+    background-color:#000;
+    border-radius: 50%;
+    transform: translateX(13px) translateY(13px) rotate(45deg); 
+}
+
+.preloder .big .medium .small {
+    height: 122px;
+    width: 122px;
+    background-color:#333;
+    border-radius: 50%;
+    transform: translateX(9px) translateY(9px) rotate(-45deg);
+    border: 5px solid #000;
+    border-left-color: transparent;
+    animation: cerc2 2s 5;
+   
+}
+
+.preloder .big .medium .small .procent {
+    height: 50px;
+    width: 50px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 2px #000;
+    transform: translateX(36px) translateY(36px) rotate(45deg);
+    text-align: center;
+    line-height: 50px;
+    animation: cerc3 2s 5;
+}
+
+
+@keyframes cerc1 {
+    from {
+        transform: translateX(7px) translateY(7px) rotate(-45deg)
+    }
+
+    to {
+        transform: translateX(7px) translateY(7px) rotate(-405deg)
+    }
+}
+@keyframes cerc2 {
+    from {
+        transform: translateX(9px) translateY(9px) rotate(-45deg)
+    }
+
+    to {
+        transform: translateX(9px) translateY(9px) rotate(675deg)
+    }
+}
+
+@keyframes cerc3 {
+    from {
+        transform: translateX(36px) translateY(36px) rotate(45deg)
+    }
+
+    to {
+        transform: translateX(36px) translateY(36px) rotate(-315deg)
+    }
+}
