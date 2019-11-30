@@ -1,0 +1,75 @@
+/** de adaugat culorile 
+    umbra gradient  
+    **/
+
+body {
+    color: white;
+    font-size: 20px;
+    /** 1em=20px **/
+}
+
+.section1 {
+    height: 100vh;
+    background-color: #333;
+}
+
+.section2 {
+    height: 100vh;
+    background-color: #555;
+}
+
+.nav-contact {
+
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    overflow: hidden;
+
+}
+
+.nav-contact a {
+    font-size: 2em;
+    background-color: crimson;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3em;
+    margin-bottom: 0.1em;
+}
+
+.nav-contact li:last-child a {
+    margin-bottom: 0;
+}
+
+.nav-contact ul {
+    transform: translateY(calc((3.1em * 3)* 2));
+    transition: 0.5s;
+}
+
+#nav:target ul {
+    transform: translateY(0);
+
+}
+
+.effect .circle {
+    height: 3em;
+    width: 3em;
+    border: 0.1em solid black;
+    border-radius: 50%;
+    animation: effect 3s infinite;
+}
+
+@keyframes effect {
+    from {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(3);
+        opacity: 0
+    }
+
+}
