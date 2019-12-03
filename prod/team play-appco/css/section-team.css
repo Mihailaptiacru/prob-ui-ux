@@ -1,0 +1,39 @@
+.contanier {
+    width: 1100px;
+
+    margin: auto;
+}
+
+.section-team {
+    text-align: center;
+}
+
+.section-team img {
+
+    width: 250px;
+}
+
+.section-team .avatars>div {
+    display: inline-block;
+    background-color: #333;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section-team .avatars .info {
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.7707457983193278) 0%, rgba(9, 9, 121, 0.7903536414565826) 35%, rgba(149, 0, 255, 0.7231267507002801) 100%);
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transition: 1s;
+    bottom: 0;
+    opacity: 0;
+}
+
+.section-team .avatars>div:hover .info {
+    bottom: 107.25%;
+    opacity: 1;
+}
