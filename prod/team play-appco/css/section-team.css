@@ -1,6 +1,6 @@
 .contanier {
     width: 1100px;
-
+    font-family: Quicksand;
     margin: auto;
 }
 
@@ -11,6 +11,24 @@
 .section-team img {
 
     width: 250px;
+}
+
+.section-team header h1 {
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.section-team header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    line-height: 25px;
 }
 
 .section-team .avatars>div {
@@ -28,12 +46,44 @@
     width: inherit;
     height: inherit;
     position: relative;
-    transition: 1s;
+    transition: 0.2s;
     bottom: 0;
     opacity: 0;
 }
 
 .section-team .avatars>div:hover .info {
     bottom: 107.25%;
+    opacity: 1;
+}
+
+.section-team .avatars>div .info>h3 {
+    padding-top: 30%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-team .avatars>div .info>h3+p {
+    padding-top:5%;
+    color: white;
+    font-size: 15px;
+}
+.section-team .avatars>div .info>h3+p+p{
+    padding-top:10% ;
+    padding-left:8% ;
+   
+}
+
+.section-team .avatars>div .info>h3+p+p a{
+    text-decoration: none;
+    color:white ;
+    padding-right: 10%;
+    font-size: 13px;
+    opacity: 0.7;
+    
+    
+}
+
+.section-team .avatars>div .info>h3+p+p a:hover {
     opacity: 1;
 }
