@@ -1,0 +1,19 @@
+.your-class div {
+    background-color: aquamarine;
+    border-left: 1px solid #111;
+    text-align: center;
+
+
+}
+
+.your-class div img {
+    display: inline;
+}
+
+.lost::placeholder {
+    color: red;
+}
+
+.lost:focus::placeholder {
+    color: green;
+}
