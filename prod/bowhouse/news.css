@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+    font-family: Poppins;
+}
+
+.section-news .card {
+
+    color: #999;
+    width: 370px;
+    height: 370px;
+    position: relative;
+}
+
+.section-news .card h2 {
+    color: white;
+}
+
+.section-news .card a {
+    color: green;
+}
+
+.section-news .card img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/** Startu! **/
+.section-news .card h2,
+.section-news .card p,
+.section-news .card small,
+.section-news .card a {
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+.section-news .card:hover h2,
+.section-news .card:hover p,
+.section-news .card:hover small,
+.section-news .card:hover a {
+    opacity: 1;
+}
+
+.section-news .card img {
+    transition: 0.2s;
+}
+
+.section-news .card:hover img {
+    opacity: 0;
+}
+
+.section-news .card div:nth-last-child(4) {
+    height: 3px;
+    width: 0;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+
+.section-news .card:hover div:nth-last-child(4) {
+    width: 100%;
+}
+
+.section-news .card div:nth-last-child(2) {
+    height: 3px;
+    width: 0;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.section-news .card:hover div:nth-last-child(2) {
+    width: 100%;
+}
